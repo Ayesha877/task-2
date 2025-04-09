@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 2</title>
+<link src="/style.css">
+
+</head>
+<body>
+    <h1 id="top-bar">Free Shiping All Over The Pakistan</h1>
+<nav>
+      <div class="logo">Maria Manal</div>
+      
+        <!-- Toggle checkbox -->
+        <input type="checkbox" id="menu-toggle" />
+    
+        <!-- Hamburger Icon -->
+        <label for="menu-toggle" class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+    
+        <!-- Nav Links -->   
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Earnings</a>
+        <a href="#">Jewelry Set</a>
+        <a href="#">Rings</a>
+        <a href="#">Bangles</a>
+        <a href="#">Contact</a>
+      </div>
+      <div><button>Search</button></div>
+</nav>
+    <section class="hero-section">
+       <div class="hero-content"> 
+         <h1>New Collection </h1> 
+         <h2> Jewelry</h2>
+          <a href="#" class="shop-button">Shop Now</a>
+        </div>
+        
+    </section>
+   
+    
+    
+    <section class="two">
+        <h2 class="title">Featured Products</h2>
+        
+        <div class="product-container">
+            <div class="product">
+              <img src="https://mairamanal.com/cdn/shop/files/images_eab91867-a6d2-4e21-92ee-d8d1739f6eb3.jpg?v=1738931898" >
+
+                <h3>Lunar Glow Gold Plated Set</h3>
+                <p class="price">Rs. 3,499.00 <span class="old-price">Rs. 4,500.00</span></p>
+            </div>
+    
+            <div class="product">
+                <img src="https://mairamanal.com/cdn/shop/files/WhatsAppImage2025-02-07at17.48.12_de776d6a.jpg?v=1738932742&width=493" >
+                <h3>Frozen Mirage Set</h3>
+                <p class="price">Rs. 6,500.00 <span class="old-price">Rs. 9,600.00</span></p>
+            </div>
+    
+            <div class="product">
+                <img src="https://mairamanal.com/cdn/shop/files/images_eab91867-a6d2-4e21-92ee-d8d1739f6eb3.jpg?v=1738931898" >
+                <h3>Crimson Kiss Crystal Floral Set</h3>
+                <p class="price">Rs. 3,999.00 <span class="old-price">Rs. 6,499.00</span></p>
+            </div>
+          </div>
+     </section>
+   <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+         font-family: Arial,  sans-serif;
+       } 
+
+       #top-bar{
+        background-color: red;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        padding: 10px;
+        
+       }
+
+       nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 50px;
+       background-color: #ffffff;
+       position: relative;
+        
+       }
+
+       .logo{
+        font-size: 24px;
+        font-weight: 400;
+        gap:30px;
+        font-style: italic;
+        font-family:'Playfair Display',serif ;
+       }
+
+
+       /* Hidden checkbox for toggle */
+    #menu-toggle {
+      display: none;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .hamburger span {
+      height: 3px;
+      width: 25px;
+      background: black;
+      margin: 4px 0;
+      transition: 0.3s;
+    }
+    
+
+       .nav-links{
+        display: flex;
+        gap: 20px;
+        padding: 0;
+        list-style: none;
+      
+       }
+       
+       .nav-link a{
+        text-decoration: none;
+        color:black;
+        font-size: 16px;
+        
+       }
+
+       .nav-links a:hover{
+        color: #c5a47e;
+       }
+       button{
+        display: flex;
+        gap:20px ;
+        font-size:16px;
+        
+       }
+       .hero-section{
+        background-image: url(https://d16aymak0y9zsb.cloudfront.net/Tesoro/product/1080x1080/07122023/107_1701934787_657176c3cfa42_29231_1-280511982365-716420441521.jpg);
+        background-position: left;
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        color:black;
+       }
+
+       .hero-content h1{
+        font-size: 25px;
+        margin-top: 30px;
+        letter-spacing: 3px;
+        font-weight: lighter;
+        font-family: 'Playfair Display',serif;
+        
+       }
+
+       .hero-content h2{
+        font-size: 48px;
+        margin-bottom: 80px;
+        font-weight: medium;
+        font-style: italic;
+       }
+
+       .shop-button{
+        padding: 15px 35px;
+        background-color: white;
+        color:black;
+        border: solid black;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+        text-decoration: none;
+       }
+
+       .shop-button:hover{
+        background-color:black ;
+        color: white;
+       }
+
+
+   
+
+  .two{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 18px;
+    color: red;
+    font-weight: bold;
+}
+
+.old-price{
+
+text-decoration: line-through;
+    font-size: 10px;
+    color:black
+    }   
+/*for mobile devices*/
+
+  @media(max-width:768px) {
+
+    .hamburger {
+        display: flex;  
+        margin-left: 60%;
+      }
+
+    .logo{
+        font-size: 20px; 
+    }
+    nav{
+        padding: 15px 20px;
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%
+        text-align: center;
+        padding: 15px 0;
+    }
+    
+
+     /* Show nav-links when checkbox is checked */
+     #menu-toggle:checked + .hamburger + .nav-links {
+        display: flex;
+      }
+    .hero-section{
+        background-position: center;
+        height: 50vh;
+    }
+    .hero-content h1{
+        font-size: 18px;
+    }
+    .hero-content h2{
+        font-size: 28px;
+    }
+    .shop-button{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    .product{
+        width: 90px;
+ }
+}
+    
+
+     
+
+
+
+       
+</style>
+</body>
+</html>
